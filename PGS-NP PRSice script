@@ -1,0 +1,23 @@
+# PGS SYS Neuronal plasticity
+PRSice_linux/PRSice_linux \
+    --A1 A1 \
+    --A2 A2 \
+    --chr CHR \
+    --bp POS \
+    --pvalue Pval \
+    --snp MarkerName \
+    --stat Beta \
+    --all-score \
+    --beta \
+    --bar-levels 5e-8,1e-5,0.05,1 \
+    --fastscore \
+    --base SummaryStats_NeuronalPlasticity_SNPs_29062021.txt.gz \
+    --binary-target F \
+    --print-snp \
+    --target BGEN_SNP_Lists/sys_genotype \
+    --pheno-file all_sys_pheno_na_ordered.txt \
+    --type bgen \
+    --allow-inter \
+    --out prs_ea_NeuronalPlasticity_2021jun28 \
+    --no-regress \
+    --thread 5
